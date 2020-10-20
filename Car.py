@@ -12,7 +12,8 @@ class Car:
         self.speed += 5
 
     def brake(self):
-        self.speed -= 5
+        if self.speed > 0:
+            self.speed -= 5
 
     def step(self):
         self.odometer += self.speed
