@@ -18,3 +18,9 @@ class TestStep(TestCar):
         self.car.step()
         self.assertEqual(self.car.odometer,5)
 
+class TestInit(TestCar):
+    def test_init(self):
+        self.assertEqual(self.car.time, 0)
+        self.assertEqual(self.car.speed,0)
+        self.assertEqual(self.car.odometer, 0)
+
