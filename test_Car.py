@@ -19,5 +19,7 @@ class TestBrake(TestCar):
 
         self.assertEqual(self.car.speed, 5)
 
-        self.assertEqual(self.car.speed, 5)
+        self.car.brake()
+
+        self.assertEqual(self.car.speed, 0)
 
